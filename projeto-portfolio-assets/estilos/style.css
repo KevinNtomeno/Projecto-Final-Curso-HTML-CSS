@@ -1,0 +1,108 @@
+/* 
+  Variáveis para cores:
+
+*/
+
+:root{
+  --fundo-principal:#f5f5f5;
+  --texto: #222222;
+  --texto-inverso: #ffffff;
+  --destaque: #0077ff;
+  --destaque-inverso: #66bbff;
+  --fundo-card: #ffffff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: var(--fundo-principal);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--texto);
+  line-height: 1.5em;
+
+}
+header{
+  background-color: var(--destaque);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+}
+
+header #menu ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  
+}
+
+header a img{
+  width: 23px;
+
+}
+header #menu ul li a{
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+header #menu a:hover{
+  background-color: var(--destaque-inverso);
+  transition: .5s;
+  color: var(--destaque);
+}
+main{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+}
+#ficha{
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--fundo-card);
+  margin-top: 20px;
+  grid-column: 2; 
+}
+section#ficha img.perfil{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 220px;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+
+}
+
+section#ficha h1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--destaque);
+  text-align: center;
+}
+#ficha p{
+  text-align: justify;
+  margin: 10px;
+}
+#ficha #social{
+  text-align: center;
+  padding: 10px;
+}
+#ficha #social a{
+  text-decoration: none;
+  transition: color .2s;
+  color: var(--destaque);
+}
+#ficha #social a:hover{
+  color: var(--destaque-inverso);
+
+}
