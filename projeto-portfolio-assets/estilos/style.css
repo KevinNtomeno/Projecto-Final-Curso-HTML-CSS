@@ -106,3 +106,39 @@ section#ficha h1{
   color: var(--destaque-inverso);
 
 }
+
+.icon{
+  width: 30px;
+}
+
+main #skills{
+  background-color: var(--fundo-card);
+  grid-column: 2; 
+
+}
+
+#skills .barra{
+  border-radius: 10px;
+  height: 6px;
+  background-color: var(--destaque-inverso);
+  display: block;
+}
+#skills .dadosSkill{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#skills .dadosSkill .porcent{
+  color: var(--destaque);
+  font-weight: 600;
+}
+#skills{
+  margin-bottom: 20px;
+}
+
+#skills .dadosSkill .nome{
+  font-weight: 600;
+}
+#skills .dadosSkill{
+  margin-top: 30px;
+}
