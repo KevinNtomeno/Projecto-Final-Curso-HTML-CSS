@@ -13,11 +13,11 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><img src="projeto-portfolio-assets/imagens/icons/home.png" alt=""></a></li>
-                <li><a href="#"><img src="projeto-portfolio-assets/imagens/icons/graduation.png" alt=""></a></li>
-                <li><a href="#"><img src="projeto-portfolio-assets/imagens/icons/artificial-intelligence.png" alt=""></a></li>
-                <li><a href="#"><img src="projeto-portfolio-assets/imagens/icons/brick-wall.png" alt=""></a></li>
-                <li><a href="#"><img src="projeto-portfolio-assets/imagens/icons/moon.png" alt=""></a></li>
+                <li><a href="#detalhes" class="link"><img src="projeto-portfolio-assets/imagens/icons/home.png" alt=""></a></li>
+                <li><a href="#skills" class="link"><img src="projeto-portfolio-assets/imagens/icons/graduation.png" alt=""></a></li>
+                <li><a href="#formacao" class="link"><img src="projeto-portfolio-assets/imagens/icons/artificial-intelligence.png" alt=""></a></li>
+                <li><a href="#projetos"class="link"><img src="projeto-portfolio-assets/imagens/icons/brick-wall.png" alt=""></a></li>
+                <li><a href="#" id="botao-tema" ><img src="projeto-portfolio-assets/imagens/icons/moon.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +44,7 @@
             <article id="video">
                 <h2>Deixe me apresentar</h2>
                 <div id="video-container">
-
+                    <video src="Apresentacao do programa.mp4" width="500px" style="display:block; margin: auto; border-radius: 10px;" controls></video>
                 </div>
             </article>
             <!--fim do video responsivo -->
@@ -171,13 +171,171 @@
 
             <article id="formacao">
                 <h2><img src="projeto-portfolio-assets/imagens/icons/graduation.png" alt="" class="icon"> Formação</h2>
+                <div id="formacao-container">
+                    <div class="curso">
+                        <div class="periodo">
+                            1991 - 1994
+                        </div>
+                        <div class="instituicao">
+                            Escola Tecnica Carioca
+                        </div>
+                        <div class="titulacao">
+                            Técnico em Informática
+                        </div>
+                    </div>
 
+                    <div class="curso">
+                        <div class="periodo">
+                            1995 - 2000
+                        </div>
+                        <div class="instituicao">
+                            Instituto Superior de Tecnologia
+                        </div>
+                        <div class="titulacao">
+                            Bacharelado em Ciência da Computação
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <div class="periodo">
+                            1998 - 2000
+                        </div>
+                        <div class="instituicao">
+                            Centro de Graduação de Professores
+                        </div>
+                        <div class="titulacao">
+                            Licenciatura em Informática
+                        </div>
+                    </div>
+                    <div class="curso">
+                        <div class="periodo">
+                            2001 - 2003
+                        </div>
+                        <div class="instituicao">
+                            Laboratório de Docência Superior
+                        </div>
+                        <div class="titulacao">
+                            Docência para Ensino Superior Profissional
+                        </div>
+                    </div>
+                    <div class="curso">
+                        <div class="periodo">
+                            2009 - 2010
+                        </div>
+                        <div class="instituicao">
+                           Fundação para Ensino à Distância
+                        </div>
+                        <div class="titulacao">
+                            Especialização para produção em ambientes EAD
+                        </div>
+                    </div>
+
+                    <div class="curso">
+                        <div class="periodo">
+                            2021 - 2024
+                        </div>
+                        <div class="instituicao">
+                            Centro de Inteligência Artificial
+                        </div>
+                        <div class="titulacao">
+                            Técnicas para aplicação de IAs
+                        </div>
+                    </div>
+                </div>
 
             </article>
             <!--Fim da formacao -->
 
             <article id="projetos">
                 <h2> <img src="projeto-portfolio-assets/imagens/icons/brick-wall.png" alt="" class="icon"> Projectos</h2>
+
+                <div id="projeto-container">
+
+                    <div class="projeto"> <!--Projeto 01-->
+                        <img src="projeto-portfolio-assets/imagens/projeto-01-videos.jpg" alt="projeto 01" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2022</p>
+                            <h3 class="titulo">Projeto de Videos</h3>
+                            <p>Projecto Construido para treinar inserção de videos em sites.</p>
+
+                            <details class="descricao">
+                                <summary>Saiba Mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias asperiores vel laudantium consectetur ratione facilis autem delectus nesciunt excepturi numquam accusantium optio eaque, eum enim consequuntur eos voluptatum et?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!--Projeto 02-->
+                        <img src="projeto-portfolio-assets/imagens/projeto-02-cordel.jpg" alt="projeto 02" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Cordel</h3>
+                            <p>Projecto Construido para treinar manipulação de imagens Paralax</p>
+
+                            <details class="descricao">
+                                <summary>Saiba Mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias asperiores vel laudantium consectetur ratione facilis autem delectus nesciunt excepturi numquam accusantium optio eaque, eum enim consequuntur eos voluptatum et?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!--Projeto 03-->
+                        <img src="projeto-portfolio-assets/imagens/projeto-03-android.jpg" alt="projeto 03" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Android</h3>
+                            <p>Projecto Construido para treinar a criação de um site funcional.</p>
+
+                            <details class="descricao">
+                                <summary>Saiba Mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias asperiores vel laudantium consectetur ratione facilis autem delectus nesciunt excepturi numquam accusantium optio eaque, eum enim consequuntur eos voluptatum et?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!--Projeto 04-->
+                        <img src="projeto-portfolio-assets/imagens/projeto-04-links.jpg" alt="projeto 04" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Links</h3>
+                            <p>Projecto Construido para treinar inserção de links em sites.</p>
+
+                            <details class="descricao">
+                                <summary>Saiba Mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias asperiores vel laudantium consectetur ratione facilis autem delectus nesciunt excepturi numquam accusantium optio eaque, eum enim consequuntur eos voluptatum et?</p>
+                            </details>
+                        </div>
+                    </div>
+
+
+                    <div class="projeto"> <!--Projeto 05-->
+                        <img src="projeto-portfolio-assets/imagens/projeto-05-login.jpg" alt="projeto 05" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2024</p>
+                            <h3 class="titulo">Projeto Login</h3>
+                            <p>Projecto Construido para treinar a criação de formulários de Login</p>
+
+                            <details class="descricao">
+                                <summary>Saiba Mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias asperiores vel laudantium consectetur ratione facilis autem delectus nesciunt excepturi numquam accusantium optio eaque, eum enim consequuntur eos voluptatum et?</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!--Projeto 06-->
+                        <img src="projeto-portfolio-assets/imagens/projeto-06-album.jpg" alt="projeto 04" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Album de Fotos</h3>
+                            <p>Projecto Construido para treinar inserção de Imagens em forma de Album.</p>
+
+                            <details class="descricao">
+                                <summary>Saiba Mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum molestias asperiores vel laudantium consectetur ratione facilis autem delectus nesciunt excepturi numquam accusantium optio eaque, eum enim consequuntur eos voluptatum et?</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
 
 
             </article>
@@ -188,7 +346,7 @@
     </main>
 
     <footer>
-
+        Site Criado por <a href="#" target="_blank">Kevin Ntomeno</a>, em 2026.
     </footer>
 </body>
 </html>
