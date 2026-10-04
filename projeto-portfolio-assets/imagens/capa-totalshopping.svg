@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Loja online Total Shopping">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1b3b"/><stop offset="1" stop-color="#1e3a6e"/></linearGradient>
+<linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5c453"/><stop offset="1" stop-color="#d9962b"/></linearGradient></defs>
+<rect width="640" height="400" fill="url(#b)"/>
+<circle cx="580" cy="50" r="120" fill="#f5c453" opacity=".08"/><circle cx="50" cy="370" r="110" fill="#fff" opacity=".05"/>
+<rect x="50" y="40" width="540" height="320" rx="18" fill="#fff"/>
+<path d="M50 58a18 18 0 0 1 18-18h504a18 18 0 0 1 18 18v28H50z" fill="#0b1b3b"/>
+<rect x="72" y="55" width="26" height="14" rx="4" fill="url(#o)"/>
+<text x="106" y="67" font-family="system-ui,Arial,sans-serif" font-size="13" font-weight="800" fill="#fff">TOTAL SHOPPING</text>
+<rect x="340" y="52" width="150" height="20" rx="10" fill="#fff" opacity=".15"/>
+<g transform="translate(520 51)" fill="none" stroke="#f5c453" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 2h4l3 11h11l3-8H6"/><circle cx="9" cy="18" r="1.500" fill="#f5c453"/><circle cx="17" cy="18" r="1.500" fill="#f5c453"/></g>
+<circle cx="544" cy="53" r="7" fill="#ef4444"/><text x="544" y="56.500" font-family="system-ui,Arial,sans-serif" font-size="9" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<rect x="74" y="104" width="492" height="64" rx="12" fill="#0b1b3b"/>
+<rect x="92" y="120" width="170" height="12" rx="6" fill="#fff"/><rect x="92" y="140" width="120" height="8" rx="4" fill="#fff" opacity=".5"/>
+<rect x="470" y="124" width="80" height="24" rx="12" fill="url(#o)"/>
+<g>
+<rect x="74" y="184" width="152" height="154" rx="12" fill="#f1f5f9"/><rect x="244" y="184" width="152" height="154" rx="12" fill="#f1f5f9"/><rect x="414" y="184" width="152" height="154" rx="12" fill="#f1f5f9"/>
+</g>
+<g>
+<rect x="86" y="196" width="128" height="68" rx="8" fill="#dbeafe"/><rect x="256" y="196" width="128" height="68" rx="8" fill="#fef3c7"/><rect x="426" y="196" width="128" height="68" rx="8" fill="#dcfce7"/>
+<path d="M126 252l24-36 18 24 12-14 24 26z" fill="#2563eb" opacity=".6"/><circle cx="188" cy="214" r="6" fill="#2563eb" opacity=".6"/>
+<path d="M296 252l24-36 18 24 12-14 24 26z" fill="#d9962b" opacity=".7"/><circle cx="358" cy="214" r="6" fill="#d9962b" opacity=".7"/>
+<path d="M466 252l24-36 18 24 12-14 24 26z" fill="#16a34a" opacity=".6"/><circle cx="528" cy="214" r="6" fill="#16a34a" opacity=".6"/>
+</g>
+<g fill="#0b1b3b"><rect x="86" y="276" width="90" height="9" rx="4"/><rect x="256" y="276" width="76" height="9" rx="4"/><rect x="426" y="276" width="96" height="9" rx="4"/></g>
+<g fill="#94a3b8"><rect x="86" y="292" width="60" height="7" rx="3"/><rect x="256" y="292" width="60" height="7" rx="3"/><rect x="426" y="292" width="60" height="7" rx="3"/></g>
+<g><rect x="86" y="308" width="62" height="20" rx="6" fill="#d9962b" opacity=".18"/><rect x="256" y="308" width="62" height="20" rx="6" fill="#d9962b" opacity=".18"/><rect x="426" y="308" width="62" height="20" rx="6" fill="#d9962b" opacity=".18"/>
+<text x="117" y="322" font-family="system-ui,Arial,sans-serif" font-size="10" font-weight="800" fill="#92610f" text-anchor="middle">Kz</text><text x="287" y="322" font-family="system-ui,Arial,sans-serif" font-size="10" font-weight="800" fill="#92610f" text-anchor="middle">Kz</text><text x="457" y="322" font-family="system-ui,Arial,sans-serif" font-size="10" font-weight="800" fill="#92610f" text-anchor="middle">Kz</text></g>
+<g fill="#0b1b3b"><circle cx="196" cy="318" r="12"/><circle cx="366" cy="318" r="12"/><circle cx="536" cy="318" r="12"/></g>
+<g stroke="#f5c453" stroke-width="2.200" stroke-linecap="round"><path d="M196 312v12M190 318h12"/><path d="M366 312v12M360 318h12"/><path d="M536 312v12M530 318h12"/></g>
+</svg>

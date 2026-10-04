@@ -3,6 +3,7 @@ PORTFÓLIO - KEVIN NTOMENO
 Versão atualizada em 2026.
 
 Projetos selecionados:
+- Total Shopping (https://totalshopping.store)
 - Ndombeschool
 - QuizApp
 - App de Conversão de Moeda com API
@@ -14,7 +15,4 @@ Estrutura:
 - index.html ........................ página (ícones SVG inline via sprite)
 - projeto-portfolio-assets/estilos .. CSS responsivo (mobile-first, tema claro/escuro)
 - projeto-portfolio-assets/scripts .. alternar tema e destaque do menu
-- projeto-portfolio-assets/imagens .. perfil.svg e capas SVG dos projetos
-
-Foto real: guarde-a em projeto-portfolio-assets/imagens/perfil.jpg e altere o src da
-imagem .avatar no index.html (perfil.svg -> perfil.jpg).
+- projeto-portfolio-assets/imagens .. perfil.png (foto) e capas SVG dos projetos

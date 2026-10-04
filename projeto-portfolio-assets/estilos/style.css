@@ -128,7 +128,6 @@ footer{
 /* ===== Responsivo ===== */
 /* Ecrãs largos: projeto em destaque ocupa a largura toda, imagem ao lado */
 @media (min-width:900px){
-  .projetos{grid-template-columns:repeat(3,minmax(0,1fr))}
   .projeto.destaque{grid-column:1/-1;flex-direction:row}
   .projeto.destaque img{width:46%;height:auto;aspect-ratio:auto;min-height:100%;border-bottom:0;border-right:1px solid var(--line)}
   .projeto.destaque .corpo{justify-content:center;padding:clamp(24px,3.5vw,36px)}
