@@ -2,44 +2,79 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Portfólio de Kevin Ntomeno — desenvolvimento web e projetos de software.">
+<meta name="theme-color" content="#f5f7fb">
+<meta property="og:title" content="Kevin Ntomeno | Portfólio">
+<meta property="og:description" content="Desenvolvimento web, JavaScript, APIs e interfaces funcionais.">
+<meta property="og:image" content="projeto-portfolio-assets/imagens/capa-ndombeschool.svg">
 <title>Kevin Ntomeno | Portfólio</title>
-<link rel="stylesheet" href="projeto-portfolio-assets/estilos/style.css">
 <link rel="icon" href="projeto-portfolio-assets/favicon.svg" type="image/svg+xml">
+<script>
+/* Aplica o tema antes de pintar a página (evita "flash" do tema errado) */
+(function(){var t=null;try{t=localStorage.getItem('portfolio-tema')}catch(e){}
+if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)t='dark';
+if(t==='dark')document.documentElement.classList.add('dark')})();
+</script>
+<link rel="stylesheet" href="projeto-portfolio-assets/estilos/style.css">
 <script src="projeto-portfolio-assets/scripts/script.js" defer></script>
 </head>
 <body>
+
+<!-- Sprite de ícones SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 10v9.5h13V10M10 19.5v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 20c.8-4 3.8-6 7.5-6s6.7 2 7.5 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4.5l-4 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.4 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="4" width="7" height="7" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4" y="13" width="7" height="7" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="13" width="7" height="7" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="salto" href="#conteudo">Saltar para o conteúdo</a>
+
 <header class="topo">
   <nav aria-label="Navegação principal">
-    <a href="#inicio" aria-label="Início">⌂</a>
-    <a href="#competencias" aria-label="Competências">◇</a>
-    <a href="#percurso" aria-label="Percurso">▱</a>
-    <a href="#projetos" aria-label="Projetos">▦</a>
-    <button id="botao-tema" type="button" aria-label="Alternar tema">◐</button>
+    <a href="#inicio" aria-label="Início" title="Início"><svg class="ico"><use href="#i-home"/></svg><span class="rotulo">Início</span></a>
+    <a href="#sobre" aria-label="Sobre mim" title="Sobre mim"><svg class="ico"><use href="#i-user"/></svg><span class="rotulo">Sobre</span></a>
+    <a href="#competencias" aria-label="Competências" title="Competências"><svg class="ico"><use href="#i-code"/></svg><span class="rotulo">Competências</span></a>
+    <a href="#percurso" aria-label="Percurso" title="Percurso"><svg class="ico"><use href="#i-route"/></svg><span class="rotulo">Percurso</span></a>
+    <a href="#projetos" aria-label="Projetos" title="Projetos"><svg class="ico"><use href="#i-grid"/></svg><span class="rotulo">Projetos</span></a>
+    <button id="botao-tema" type="button" aria-label="Alternar tema claro/escuro" title="Alternar tema" aria-pressed="false">
+      <svg class="ico ico-lua"><use href="#i-moon"/></svg><svg class="ico ico-sol"><use href="#i-sun"/></svg>
+    </button>
   </nav>
 </header>
-<main>
+
+<main id="conteudo">
 <section id="inicio" class="hero">
-  <div class="avatar" aria-hidden="true">KN</div>
+  <img class="avatar" src="projeto-portfolio-assets/imagens/perfil.svg" alt="Avatar de Kevin Ntomeno" width="120" height="120">
   <p class="eyebrow">ESTUDANTE · DESENVOLVEDOR DE SOFTWARE</p>
   <h1>Kevin Ntomeno</h1>
   <p class="resumo">Transformo problemas reais em soluções digitais, com foco em desenvolvimento web, JavaScript, APIs e interfaces funcionais.</p>
   <div class="acoes">
-    <a class="botao" href="https://github.com/KevinNtomeno" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a class="botao secundario" href="#projetos">Ver projetos</a>
+    <a class="botao" href="https://github.com/KevinNtomeno" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-github"/></svg>GitHub</a>
+    <a class="botao secundario" href="#projetos"><svg class="ico"><use href="#i-down"/></svg>Ver projetos</a>
   </div>
 </section>
+
 <section id="sobre" class="bloco">
   <h2>Sobre mim</h2>
   <p>Sou estudante e desenvolvedor em aprendizagem contínua. Gosto de construir aplicações práticas, testar ideias e evoluir os meus projetos a partir de problemas concretos.</p>
 </section>
+
 <section id="competencias" class="bloco">
   <h2>Competências</h2>
-  <div class="competencias">
-    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>APIs</span><span>Git &amp; GitHub</span><span>Design responsivo</span><span>Interfaces web</span><span>Lógica de programação</span>
-  </div>
+  <ul class="competencias">
+    <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>APIs</li><li>Git &amp; GitHub</li><li>Design responsivo</li><li>Interfaces web</li><li>Lógica de programação</li>
+  </ul>
 </section>
+
 <section id="percurso" class="bloco">
   <h2>Percurso</h2>
   <div class="linha">
@@ -47,16 +82,36 @@
     <article><strong>Projetos práticos</strong><h3>Desenvolvimento Web</h3><p>HTML, CSS, JavaScript, APIs e criação de aplicações.</p></article>
   </div>
 </section>
+
 <section id="projetos" class="bloco">
-  <div class="cabecalho-secao"><div><p class="eyebrow">PORTFÓLIO</p><h2>Projetos selecionados</h2></div><a href="https://github.com/KevinNtomeno?tab=repositories" target="_blank" rel="noopener noreferrer">Todos os repositórios</a></div>
+  <div class="cabecalho-secao">
+    <div><p class="eyebrow">PORTFÓLIO</p><h2>Projetos selecionados</h2></div>
+    <a class="link-icone" href="https://github.com/KevinNtomeno?tab=repositories" target="_blank" rel="noopener noreferrer">Todos os repositórios<svg class="ico"><use href="#i-arrow"/></svg></a>
+  </div>
   <div class="projetos">
-    <article class="projeto destaque"><span>SISTEMA WEB</span><h3>Ndombeschool</h3><p>Sistema web direcionado ao contexto escolar, com estrutura organizada por funcionalidades e preparado para evolução.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div><a href="https://github.com/KevinNtomeno/ndombeschool" target="_blank" rel="noopener noreferrer">Abrir projeto →</a></article>
-    <article class="projeto"><span>APLICAÇÃO INTERATIVA</span><h3>QuizApp</h3><p>Aplicação de perguntas e respostas com páginas de perguntas e resultados, scripts e recursos multimédia.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div><a href="https://github.com/KevinNtomeno/quizapp" target="_blank" rel="noopener noreferrer">Abrir projeto →</a></article>
-    <article class="projeto"><span>API</span><h3>Conversor de Moedas</h3><p>Aplicação de conversão de moedas com interface web, JavaScript e integração com API externa.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>API</b></div><a href="https://github.com/KevinNtomeno/App-de-Conversao-De-Moeda-com-api" target="_blank" rel="noopener noreferrer">Abrir projeto →</a></article>
-    <article class="projeto"><span>FRONT-END</span><h3>Cordel Project</h3><p>Site desenvolvido para praticar composição visual, imagens e efeito Parallax em páginas web.</p><div class="tags"><b>HTML</b><b>CSS</b></div><a href="https://github.com/KevinNtomeno/cordel-project" target="_blank" rel="noopener noreferrer">Abrir projeto →</a></article>
+    <article class="projeto destaque">
+      <img src="projeto-portfolio-assets/imagens/capa-ndombeschool.svg" alt="Painel de gestão escolar do Ndombeschool" width="640" height="400" loading="lazy" decoding="async">
+      <div class="corpo"><span>SISTEMA WEB</span><h3>Ndombeschool</h3><p>Sistema web direcionado ao contexto escolar, com estrutura organizada por funcionalidades e preparado para evolução.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div><a class="link-icone" href="https://github.com/KevinNtomeno/ndombeschool" target="_blank" rel="noopener noreferrer">Abrir projeto<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </article>
+    <article class="projeto">
+      <img src="projeto-portfolio-assets/imagens/capa-quizapp.svg" alt="Ecrã de pergunta do QuizApp" width="640" height="400" loading="lazy" decoding="async">
+      <div class="corpo"><span>APLICAÇÃO INTERATIVA</span><h3>QuizApp</h3><p>Aplicação de perguntas e respostas com páginas de perguntas e resultados, scripts e recursos multimédia.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div><a class="link-icone" href="https://github.com/KevinNtomeno/quizapp" target="_blank" rel="noopener noreferrer">Abrir projeto<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </article>
+    <article class="projeto">
+      <img src="projeto-portfolio-assets/imagens/capa-conversor.svg" alt="Conversor de moedas com gráfico de câmbio" width="640" height="400" loading="lazy" decoding="async">
+      <div class="corpo"><span>API</span><h3>Conversor de Moedas</h3><p>Aplicação de conversão de moedas com interface web, JavaScript e integração com API externa.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>API</b></div><a class="link-icone" href="https://github.com/KevinNtomeno/App-de-Conversao-De-Moeda-com-api" target="_blank" rel="noopener noreferrer">Abrir projeto<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </article>
+    <article class="projeto">
+      <img src="projeto-portfolio-assets/imagens/capa-cordel.svg" alt="Paisagem em camadas do Cordel Project" width="640" height="400" loading="lazy" decoding="async">
+      <div class="corpo"><span>FRONT-END</span><h3>Cordel Project</h3><p>Site desenvolvido para praticar composição visual, imagens e efeito Parallax em páginas web.</p><div class="tags"><b>HTML</b><b>CSS</b></div><a class="link-icone" href="https://github.com/KevinNtomeno/cordel-project" target="_blank" rel="noopener noreferrer">Abrir projeto<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+    </article>
   </div>
 </section>
 </main>
-<footer>Portfólio de <a href="https://github.com/KevinNtomeno" target="_blank" rel="noopener noreferrer">Kevin Ntomeno</a> · 2026</footer>
+
+<footer>
+  <a class="link-icone" href="https://github.com/KevinNtomeno" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-github"/></svg>Kevin Ntomeno</a>
+  <span>Portfólio · 2026</span>
+</footer>
 </body>
 </html>

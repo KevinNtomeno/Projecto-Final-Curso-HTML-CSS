@@ -8,6 +8,13 @@ Projetos selecionados:
 - App de Conversão de Moeda com API
 - Cordel Project
 
-Para executar: abra o arquivo index.html no navegador.
+Para executar: abra o arquivo index.html no navegador (não precisa de servidor).
 
-Nota: esta versão foi reconstruída para não depender dos assets binários do template antigo. Os ícones e o favicon usam SVG/texto e o projeto funciona localmente sem servidor.
+Estrutura:
+- index.html ........................ página (ícones SVG inline via sprite)
+- projeto-portfolio-assets/estilos .. CSS responsivo (mobile-first, tema claro/escuro)
+- projeto-portfolio-assets/scripts .. alternar tema e destaque do menu
+- projeto-portfolio-assets/imagens .. perfil.svg e capas SVG dos projetos
+
+Foto real: guarde-a em projeto-portfolio-assets/imagens/perfil.jpg e altere o src da
+imagem .avatar no index.html (perfil.svg -> perfil.jpg).

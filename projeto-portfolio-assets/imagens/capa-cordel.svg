@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Paisagem em camadas com efeito parallax">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c2d12"/><stop offset=".55" stop-color="#ea580c"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs>
+<rect width="640" height="400" fill="url(#s)"/>
+<circle cx="440" cy="190" r="70" fill="#fef3c7"/><circle cx="440" cy="190" r="100" fill="#fef3c7" opacity=".2"/>
+<g fill="#fff" opacity=".35"><circle cx="70" cy="50" r="2.5"/><circle cx="170" cy="90" r="2"/><circle cx="270" cy="40" r="2.5"/><circle cx="560" cy="60" r="2"/><circle cx="360" cy="70" r="2"/><circle cx="110" cy="140" r="1.8"/></g>
+<path d="M0 270l90-70 80 50 100-90 110 90 90-60 170 90v120H0z" fill="#9a3412"/>
+<path d="M0 310l120-60 90 40 120-70 120 80 80-40 110 50v90H0z" fill="#7c2d12"/>
+<path d="M0 350l100-40 110 30 130-50 120 50 90-30 90 30v60H0z" fill="#431407"/>
+<g fill="#1c0a04"><path d="M70 400V316l-14 0 24-40 24 40h-14v84z"/><path d="M520 400V330h-12l20-34 20 34h-12v70z"/><path d="M570 400V340h-10l17-28 17 28h-10v60z"/></g>
+<g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".55"><path d="M250 150q10-12 20 0q10-12 20 0"/><path d="M330 120q8-10 16 0q8-10 16 0"/></g>
+</svg>
